@@ -89,7 +89,10 @@ function route_get_tx(res, txid) {
 }
 
 function route_get_index(res, error) {
-  res.render('index', { active: 'home', error: error, warning: null});
+ // res.render('index', { active: 'home', error: error, warning: null});
+   res.render('about', { active: 'about', error: error, warning: null});
+
+
 }
 
 function route_get_address(res, hash, count) {
@@ -124,10 +127,21 @@ function route_get_address(res, hash, count) {
 /* GET home page. */
 router.get('/', function(req, res) {
   route_get_index(res, null);
+
 });
 
 router.get('/info', function(req, res) {
   res.render('info', { active: 'info', address: settings.address, hashes: settings.api });
+});
+
+router.get('/index', function (req,res){
+   res.render('index', { active: 'home', error: null, warning: null});
+
+});
+
+router.get('/about', function (req,res){
+   res.render('about', { active: 'about', error: null, warning: null});
+
 });
 
 router.get('/markets/:market', function(req, res) {
