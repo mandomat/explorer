@@ -88,11 +88,11 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='/') #{settings.title}
+          a.navbar-brand(href='/index') #{settings.title}
         .collapse.navbar-collapse(id='navbar-collapse')
           ul.nav.navbar-nav
             li#home
-              a.navbar-link(href='/') 
+              a.navbar-link(href='/index') 
                 span.glyphicon.glyphicon-search
                 span.menu-text #{settings.locale.menu_explorer}
             if settings.heavy == true
@@ -125,6 +125,10 @@ html
                 a.navbar-link(href='/info')
                   span.glyphicon.glyphicon-info-sign
                   span.menu-text #{settings.locale.menu_api}
+              li#about
+                a.navbar-link(href='/about')
+                  span.glyphicon.glyphicon-question-sign
+                  span.menu-text About
     .col-md-12
       .row.text-center
         .col-md-2.col-md-offset-1

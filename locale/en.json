@@ -12,7 +12,7 @@
     "menu_reward": "Reward",
     "menu_movement": "Movement",
     "menu_node": "Nodes",
-    "menu_network": "Network",
+    "menu_network": "Network",    
 
     // explorer view
     "ex_title": "Block Explorer",
@@ -101,6 +101,9 @@
     "api_getsupply": "Returns the current money supply.",
     "api_getnextrewardestimate": "Returns an estimate for the next block reward based on the current state of decentralized voting.",
     "api_getnextrewardwhenstr": "Returns string describing how long until the votes are tallied and the next block reward is computed.",
+     
+    // About view
+    "about_title": "About",
 
     // Markets view
     "mkt_hours": "24 hours",
