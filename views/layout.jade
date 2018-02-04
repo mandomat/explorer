@@ -129,10 +129,12 @@ html
                 a.navbar-link(href='/about')
                   span.glyphicon.glyphicon-question-sign
                   span.menu-text About
-    .col-md-12
+   .col-md-12
       .row.text-center
-        .col-md-2.col-md-offset-1
-          .panel.panel-default.hidden-sm.hidden-xs
+        .col-md-1.col-md-offset-1
+        .col-md-2.col-sm-12
+          img(src='#{settings.logo}', style='margin-top:-15px;height:128px;')
+          //.panel.panel-default.hidden-sm.hidden-xs
             .panel-heading
               if settings.nethash_units == 'K'
                 strong #{settings.locale.network} (KH/s)
@@ -146,7 +148,7 @@ html
                 strong #{settings.locale.network} (PH/s)
               else if settings.nethash_units == 'H'
                 strong #{settings.locale.network} (H/s)
-            .panel-body
+          .panel-body
               if settings.index.difficulty == 'Hybrid'
                label#hashrate - 
                <br>
@@ -164,7 +166,7 @@ html
                label#difficultyHybrid -
               else
                label#difficulty -
-        .col-md-2.col-sm-12
+        //.col-md-2.col-sm-12
           img(src='#{settings.logo}', style='margin-top:-15px;height:128px;')
         .col-md-2
           .panel.panel-default.hidden-sm.hidden-xs
